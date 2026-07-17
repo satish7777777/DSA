@@ -143,24 +143,24 @@
 // Find the pair whose sum is the smallest.
 
 // Example
-nums = [4, 7, 1, 9, 3]
+// nums = [4, 7, 1, 9, 3]
 // Expected Output
 // Pair: 1 3
 // Sum: 4
 // Another Example
-// nums = [8, 6, 2, 5]
+nums = [8, 6, 2, 5]
 // Expected Output
 // Pair: 2 5
 // Sum: 7
 
 // nums = [8, 6, 2, 5]
 
-let min = 0;
-let index = []
+let min = nums[0] + nums[1];
+let index = [nums[0], nums[1]]
 
 for(let i = 0; i < nums.length; i++){
     for(let j = i + 1; j < nums.length; j++){
-        min = nums[i] + nums[j];
+        // min = nums[i] + nums[j];
         let sum = nums[i] + nums[j];
         console.log("SSSSUM", sum);
 
