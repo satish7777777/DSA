@@ -210,13 +210,13 @@
 // 4 -> 2
 // 5 -> 1
 // Example
-nums = [1,1,2,3,3]
+// nums = [1,1,2,3,3]
 // Expected Output
 // 1 -> 2
 // 2 -> 1
 // 3 -> 2
 
-// nums = [2,4,2,5,4,2]
+nums = [2,4,2,5,4,2]
 let unique = []
 
 for(let i = 0; i < nums.length; i++){
@@ -224,6 +224,9 @@ for(let i = 0; i < nums.length; i++){
     if(unique.includes(nums[i])) {
         continue;
     }
+      if(!unique.includes(nums[i])){
+                unique.push(nums[i])
+            }
      let count = 0;
     for(let j = 0; j < nums.length; j++){
        
@@ -231,9 +234,9 @@ for(let i = 0; i < nums.length; i++){
             count++;
         }
 
-        if(!unique.includes(nums[i])){
-                unique.push(nums[i])
-            }
+        // if(!unique.includes(nums[i])){
+        //         unique.push(nums[i])
+        //     }
     }
     console.log(nums[i] + " " + count )
 }
