@@ -142,16 +142,18 @@
 // flatter(nums);
 // console.log(re)
 
-let nums = [12, 56, 789, 14, 659, 48];
-let re = [];
+// let nums = [12, 56, 789, 14, 659, 48];
+// let re = [];
 
-for(let i = 0; i < nums.length; i++){
-    nums[i] = String(nums[i]);
+// for(let i = 0; i < nums.length; i++){
+//     nums[i] = String(nums[i]);
 
-    if(nums[i].includes('8')){
-        re.push(nums[i])
-    }
-}
+//     if(nums[i].includes('8')){
+//         re.push(nums[i])
+//     }
+    
+// console.log(nums);
+// }
 
 // console.log(nums);
-console.log(re)
+// console.log(re)
