@@ -144,7 +144,7 @@
 
 // Example:
 
-// nums = [2,7,5,9]
+nums = [2,7,5,9]
 
 // Output:
 
@@ -153,13 +153,14 @@
 // 7 9
 // 5 9
 
-// let n = 8;
-// for (let i = 0; i <=n; i++) {
-//   for (let j = 0; j < i; j++) {
-//     process.stdout.write("* ");
-//   }
-//   console.log();
-// }
+let n = 8;
+for (let i = 0; i <=n; i++) {
+  for (let j = 0; j < i; j++) {
+    process.stdout.write("* ");
+    // console.log("* ");
+  }
+  console.log();
+}
 
 
 // const num = [1,2,4,5,6,7,8];

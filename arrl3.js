@@ -216,30 +216,43 @@
 // 2 -> 1
 // 3 -> 2
 
-nums = [2,4,2,5,4,2]
-let unique = []
+// nums = [2,4,2,5,4,2]
+// let unique = []
 
-for(let i = 0; i < nums.length; i++){
+// for(let i = 0; i < nums.length; i++){
 
-    if(unique.includes(nums[i])) {
-        continue;
-    }
-      if(!unique.includes(nums[i])){
-                unique.push(nums[i])
-            }
-     let count = 0;
-    for(let j = 0; j < nums.length; j++){
+//     if(unique.includes(nums[i])) {
+//         continue;
+//     }
+//       if(!unique.includes(nums[i])){
+//                 unique.push(nums[i])
+//             }
+//      let count = 0;
+//     for(let j = 0; j < nums.length; j++){
        
-        if(nums[i] == nums[j]){
-            count++;
-        }
+//         if(nums[i] == nums[j]){
+//             count++;
+//         }
 
-        // if(!unique.includes(nums[i])){
-        //         unique.push(nums[i])
-        //     }
-    }
-    console.log(nums[i] + " " + count )
-}
+//         // if(!unique.includes(nums[i])){
+//         //         unique.push(nums[i])
+//         //     }
+//     }
+//     console.log(nums[i] + " " + count )
+// }
 
 
 // console.log("gggggg",unique);
+
+let nums = [2,4,2,5,4,6];
+let dub = []
+
+for(let i = 0; i < nums.length; i++){
+    
+    if(!dub.includes(i)){
+        console.log(dub.includes(i))
+        dub.push(nums[i])
+    }
+}
+console.log(dub);
+
