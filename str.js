@@ -1,34 +1,34 @@
 //Valid Anagram
 
-let namee = "satish";
-let n = "tishosa";
+// let namee = "satish";
+// let n = "tishosa";
 
-function anagram(str1, str2) {
+// function anagram(str1, str2) {
 
-    let f1 = str1.split("");
-    let f2 = str2.split("");
-    // console.log(f1)
-    let a = f1.length;
-    let b = 0;
+//     let f1 = str1.split("");
+//     let f2 = str2.split("");
+//     // console.log(f1)
+//     let a = f1.length;
+//     let b = 0;
 
-    for(let i = 0; i < f1.length; i++){
-        for(let j = 0; j < f2.length; j++){
-            // console.log(str1[i] + " == " + str2[j])
-            if(str1[i] == str2[j]){
-                b++;
-                // str2[j] = 0;
-                break;
-            }
-        }
-    }
+//     for(let i = 0; i < f1.length; i++){
+//         for(let j = 0; j < f2.length; j++){
+//             // console.log(str1[i] + " == " + str2[j])
+//             if(str1[i] == str2[j]){
+//                 b++;
+//                 // str2[j] = 0;
+//                 break;
+//             }
+//         }
+//     }
 
-    console.log(a + " -- " + b)
+//     console.log(a + " -- " + b)
 
-    if(a == b){
-        return true;
-    }else{
-        return false;
-    }
+//     if(a == b){
+//         return true;
+//     }else{
+//         return false;
+//     }
 //   let counter = {}; //create HashMap/Object
 
 //   if (str1.length !== str2.length) {//if length is not equal to both string then return false
@@ -47,9 +47,9 @@ function anagram(str1, str2) {
 //   }
 //   console.log(counter);
 //   return true;
-}
+// }
 
-console.log(anagram(namee, n));
+// console.log(anagram(namee, n));
 
 // let frequency = namee.split("")
 // let frequency2 = n.split("")
@@ -73,3 +73,54 @@ console.log(anagram(namee, n));
 //     counter[letter]-=1;
 //     return true;
 // }
+
+
+
+
+//longest substring
+
+let s = "abcabcbb";
+
+// function longestSubString(str1){
+//     let res = 0;
+//     let left = 0;
+//     let right = 0;
+//     let map = new map();
+
+//     let arr = str1.split("");
+
+//     console.log("map",map);
+//     console.log("arr",arr);
+
+// }
+
+function longestSubString(s) {
+    let res = 0;
+    let left = 0;
+
+    let map = new Map();
+    console.log(map)
+
+    let arr = s.split("");
+
+    let right = 0;
+
+    for (; right < arr.length; right++) {
+
+        let idx = map.has(arr[right])
+            ? map.get(arr[right])
+            : -1;
+
+        if (idx !== -1 && idx >= left) {
+            res = Math.max(res, right - 1 - left + 1);
+
+            left = idx + 1;
+        }
+
+        map.set(arr[right], right);
+    }
+
+    return Math.max(res, right - 1 - left + 1);
+}
+
+console.log(longestSubString(s));
