@@ -1,19 +1,44 @@
-const str = "hello";
+// const str = "hello world";
 
-function vowel(str){
-    let v = [];
-    let count = 0;
+// function removespace(str){
+//     let result = "";
 
-    for(let i = 0; i < str.length; i++){
-        const char = str[i].toLowerCase();
-        if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
-            v.push(char);
-            count++;
-        }
-    }
-    console.log(v)
-    console.log("Count" + count)
-}
+//     // for(let i = 0; i <= str.length; i++){
+//     //     const char = str[i];
+
+//     //     if(!char == " "){
+//     //         result += char;
+//     //     }
+//     // }
+//     for(let char of str){
+//         // const c = char;
+
+//         if(char !== " "){
+//             result += char;
+//         }
+//     }
+//     return result;
+//     // console.log(result);
+// }
+
+// console.log(removespace(str))
+
+// function vowel(str){
+//     let v = [];
+//     let count = 0;
+
+//     for(let i = 0; i < str.length; i++){
+//         const char = str[i].toLowerCase();
+//         if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
+//             v.push(char);
+//             count++;
+//         }
+//     }
+//     console.log(v)
+//     console.log("Count" + count)
+// }
+
+
 
 // function countchar(str){
 //     let count = 0;
@@ -35,7 +60,7 @@ function vowel(str){
 //     // console.log(result)
 // }
 
-console.log(vowel(str))
+// console.log(vowel(str))
 
 // let result = "";
 // for(let i = str.length -1; i >= 0; i--){
@@ -55,3 +80,7 @@ console.log(vowel(str))
    
 // }
 //  console.log(result)
+
+
+
+
