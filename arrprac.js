@@ -149,28 +149,28 @@
 
 // Remove every number containing 8
 
-// let nums = [12,80,18,80,91,28];
+let nums = [12,80,18,80,91,28];
 
-// for(let i = 0; i < nums.length; i++){
-// for(let i = nums.length -1; i >= 0; i--){
+for(let i = 0; i < nums.length; i++){
+for(let i = nums.length -1; i >= 0; i--){
 
-    // nums[i] = String(nums[i])
-    // let str = String(nums[i])
+    nums[i] = String(nums[i])
+    let str = String(nums[i])
 
-    // if(str.includes("8")){
-    //     nums.splice(i,1)
-    // }
+    if(str.includes("8")){
+        nums.splice(i,1)
+    }
 
-    // if(nums[i].includes('8')){
-    //     nums.splice(i,1)
-    // }
+    if(nums[i].includes('8')){
+        nums.splice(i,1)
+    }
 
-    // if(String(nums[i]).includes('8')){
-//         nums.splice(i,1)
-//     }
-// }
+    if(String(nums[i]).includes('8')){
+        nums.splice(i,1)
+    }
+}
 
-// console.log(nums)
+console.log(nums)
 
 // let nums = [12,80,18,80,91,28];
 

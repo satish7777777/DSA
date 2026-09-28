@@ -123,24 +123,24 @@
 
 // console.log(rev)
 
-let nums = [1,[2,3,[4,5],6,7]];
-let re = [];
+// let nums = [1,[2,3,[4,5],6,7]];
+// let re = [];
 
 
-function flatter(nums){
-    for(let i = 0; i < nums.length; i++){
+// function flatter(nums){
+//     for(let i = 0; i < nums.length; i++){
         
-        if(Array.isArray(nums[i])){
-            flatter(nums[i]);
-        }
-        else{
-            re.push(nums[i])
-        }
-    }
-}
+//         if(Array.isArray(nums[i])){
+//             flatter(nums[i]);
+//         }
+//         else{
+//             re.push(nums[i])
+//         }
+//     }
+// }
 
-flatter(nums);
-console.log(re)
+// flatter(nums);
+// console.log(re)
 
 // let nums = [12, 56, 789, 14, 659, 48];
 // let re = [];
@@ -157,3 +157,17 @@ console.log(re)
 
 // console.log(nums);
 // console.log(re)
+
+
+let nums = [12, 80, 18, 80, 91, 28, 82];
+
+let result = [];
+
+for (let i = 0; i < nums.length; i++) {
+    let num = String(nums[i]);
+    if (num.includes("8")) {
+        result.push(nums[i]);
+    }
+}
+
+console.log(result);

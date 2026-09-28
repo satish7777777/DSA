@@ -23,22 +23,22 @@
 
 // console.log(twop(arr))
 
-// let arr = [5, 3, 8, 2, 1];
+let arr = [5, 3, 8, 2, 1];
 
-// function bubble(arr){
-//     // let first = 0;
-//     // let second = 1;
+function bubble(arr){
+    // let first = 0;
+    // let second = 1;
 
-//     for(let i = 0; i < arr.length; i++){
-//         for(let j = 0; j <arr.length - 1; j++){
-//             if(arr[j] > arr[j + 1]){
-//                 [arr[j], arr[j + 1]] = [arr[j+1], arr[j]];
-//             }
-//         }
-//     }
+    for(let i = 0; i < arr.length; i++){
+        for(let j = 0; j <arr.length - 1; j++){
+            if(arr[j] > arr[j + 1]){
+                [arr[j], arr[j + 1]] = [arr[j+1], arr[j]];
+            }
+        }
+    }
 
-//     return arr;
+    return arr;
 
-// }
+}
 
-// console.log(bubble(arr));
+console.log(bubble(arr));

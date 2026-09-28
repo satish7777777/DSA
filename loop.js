@@ -224,24 +224,24 @@ for (let i = 0; i <=n; i++) {
 
 // Example:
 
-nums = [2,2,3,2]
+// nums = [2,2,3,2]
 
-// Output:
+// // Output:
 
-// 3
+// // 3
 
-let numbers = 0;
-for(let i = 0; i < nums.length; i++){
-    for(let j = i + 1; j < nums.length; j++){
-        first = nums[i];
-        second = nums[j];
+// let numbers = 0;
+// for(let i = 0; i < nums.length; i++){
+//     for(let j = i + 1; j < nums.length; j++){
+//         first = nums[i];
+//         second = nums[j];
        
 
-        if(first == second ){
-            numbers++;
-            // console.log("NNNNNN",numbers);
-        }
+//         if(first == second ){
+//             numbers++;
+//             // console.log("NNNNNN",numbers);
+//         }
        
-    }
-}
- console.log("NNNNNN",numbers);
+//     }
+// }
+//  console.log("NNNNNN",numbers);
