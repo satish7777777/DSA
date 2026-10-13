@@ -33,45 +33,45 @@
 // Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
  
 
-let nums1 = [1,2,3,0,0,0];
-let nums2 = [2,5,6];
-let m = 3;
-let n = 3;
+// let nums1 = [1,2,3,0,0,0];
+// let nums2 = [2,5,6];
+// let m = 3;
+// let n = 3;
 
-function merge(nums1,m, nums2, n){
-    let i = m - 1;
-    let j = n - 1;
-    let k = m + n - 1;
+// function merge(nums1,m, nums2, n){
+//     let i = m - 1;
+//     let j = n - 1;
+//     let k = m + n - 1;
 
-    // console.log("I", i + "J", j + "K", k)
+//     // console.log("I", i + "J", j + "K", k)
 
-    while(i >= 0 && j >= 0){ // either i and j value is negative (then terminate loop) 
-        if(nums1[i] > nums2[j]){ //nums1[i] value is grater then nums2[j]
-            nums1[k] = nums1[i];// then assign nums1[i] value in the end of nums1 [k] index
-            i--;
-            k--;
-        }
-        else {
-            nums1[k] = nums2[j]; // nums2[j] is grater then or equal to nums1[i] (nums1[i] < nums2[j]) // so assign the value if nums2[j] in the end of nums1 [k]
-            j--;
-            k--;
-        }
-        // k--;
-    }
+//     while(i >= 0 && j >= 0){ // either i and j value is negative (then terminate loop) 
+//         if(nums1[i] > nums2[j]){ //nums1[i] value is grater then nums2[j]
+//             nums1[k] = nums1[i];// then assign nums1[i] value in the end of nums1 [k] index
+//             i--;
+//             k--;
+//         }
+//         else {
+//             nums1[k] = nums2[j]; // nums2[j] is grater then or equal to nums1[i] (nums1[i] < nums2[j]) // so assign the value if nums2[j] in the end of nums1 [k]
+//             j--;
+//             k--;
+//         }
+//         // k--;
+//     }
 
-    // If nums1 is exhausted first, nums2 may still have elements.
-    // Copy those remaining nums2 elements into nums1.
-    while(j >= 0){ 
-        nums1[k] = nums2[j];
-        k--;
-        j--;
-    }
-    // console.log(nums1)
-    // return nums1;
-}
+//     // If nums1 is exhausted first, nums2 may still have elements.
+//     // Copy those remaining nums2 elements into nums1.
+//     while(j >= 0){ 
+//         nums1[k] = nums2[j];
+//         k--;
+//         j--;
+//     }
+//     // console.log(nums1)
+//     // return nums1;
+// }
 
-merge(nums1,m, nums2, n)
-console.log(nums1);
+// merge(nums1,m, nums2, n)
+// console.log(nums1);
 
 
 
@@ -127,3 +127,34 @@ console.log(nums1);
 // console.log("NNNN",newnum);
 // console.log(i);
 // console.log(j);
+
+
+let nums1 = [1,2,3,0,0,0];
+let nums2 = [2,5,6];
+let m = 3;
+let n = 3;
+
+function merges(nums1,nums2,m,n){
+    let i = m - 1;
+    let j = n - 1;
+    let k = m + n -1;
+
+    while(i >=0 && j >=0){
+        if(nums1[i] < nums2[j]){
+            nums1[k] = nums2[j];
+            j--;
+            k--;
+        }
+        else{
+            nums1[k] = nums1[i];
+            i--;
+            k--;
+        }
+    }
+
+
+
+}
+
+merges(nums1,nums2,m,n);
+console.log(nums1)
