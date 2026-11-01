@@ -6,6 +6,7 @@ for(let i = 0; i < nums.length; i++){
     // map.set(num, (map.get(num) || 0) + 1);
     // map.set(nums[i], (map.get(nums[i]) || 0) + 1);
     // map.set(nums[i], (map.get(nums[i]) || 0) + 1)
-    map.set(nums[i], (map.get(nums[i]) || 0) + 1)
+    // map.set(nums[i], (map.get(nums[i]) || 0) + 1)
+    map.set(nums[i], i)
 }
 console.log(map);
