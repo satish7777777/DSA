@@ -28,7 +28,7 @@ function maxwater(height){
     let length = height.length - 1;
     let watercontainer = 0;
 
-    while(left <= right){
+    while(left < right){
         if(height[left] < height[right]){
             let currentwater = height[left] * length;
             console.log("Left ",currentwater)
