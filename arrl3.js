@@ -249,7 +249,7 @@ let dub = []
 
 for(let i = 0; i < nums.length; i++){
     
-    if(!dub.includes(i)){
+    if(!dub.includes(nums[i])){
         console.log(dub.includes(i))
         dub.push(nums[i])
     }

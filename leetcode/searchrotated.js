@@ -14,9 +14,21 @@ while(left <= right){
         console.log("Target Found ",mid);
     }
     if(nums[mid] >= nums[start]){
+        if(target <= nums[start] && target > nums[mid]){
+            start = mid + 1;
+        }
+        else{
+            end = mid - 1;
+        }
     // console.log("Left sorted")
 }
 else{
+    if(target > nums[mid] && target <= nums[end]){
+        end = mid -1;
+    } 
+    else{
+        start = mid +1;
+    }
     // console.log("Right sorted");
 }
 }
